@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html id="HtmlElement" class "no-js" lang="sv-SE">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="content-type" content="text/html; charset=UTF-8" />
+
+<!--define angular app -->
+<html data-ng-app="setUpApp">
+<!-- Header-->
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My simple SetUp</title>
+    <!-- Firebase script -->
+
+    <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCvYOK-PWCtSOEJ_fQEvjVtHA9D1IPYwS0",
+            authDomain: "arttech-60c60.firebaseapp.com",
+            databaseURL: "https://arttech-60c60.firebaseio.com",
+            storageBucket: "arttech-60c60.appspot.com",
+            messagingSenderId: "59763235069"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- Latest js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<!-- HEADER AND NAVBAR -->
+<header>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+                <img style="height:200px; margin-top: -60px;" src="images/artTech1.png">
+            </div>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            <span class ="icon-bar"  ></span>
+            <span class ="icon-bar" ></span>
+            <span class ="icon-bar" ></span></button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-rigth">
+                    <li class=""><a href="#"><i class=""></i> Home</a></li>
+                    <li><a href="#/tech"><i class=""></i> Tech</a></li>
+                    <li><a href="#/art"><i class=""></i> Art</a></li>
+
+
+                </ul>
+                </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div data-ng-view="startController">
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        < id="main">
+            <br><br><br><br>
+            <h3 style="text-align:left"> {{ message }} </h3>
+            <!-- angular templating -->
+            <!-- this is where content will be injected -->
+            <div data-ng-view=</div>
+
+                <div data-ng-view="techController">
+
+                    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+                    < id="main2">
+                        <br><br><br><br>
+                        <h3 style="text-align:left"> {{ message }} </h3>
+                        <!-- angular templating -->
+                        <!-- this is where content will be injected -->
+                        <div data-ng-view=</div>
+                        </div>
+                            <div data-ng-view="artController">
+
+                                <!-- MAIN CONTENT AND INJECTED VIEWS -->
+                                < id="main3">
+                                    <br><br><br><br>
+                                    <h3 style="text-align:left"> {{ message }} </h3>
+                                    <!-- angular templating -->
+                                    <!-- this is where content will be injected -->
+                                    <div data-ng-view=</div>
+
+                                    </div>
+
+    </div>
+                </div>
+            </div>
+    </div>
+
+
+<div class="container">
+  <div class="Social">
+    <div class="col-sm-3"></div>
+
+    <div class="col-sm-2">
+        <a href="https://www.facebook.com/sugarleo"><img src="icons/1476978004_Facebook.png" class="socialticon" width="40px" height="auto"></a>
+
+    </div>
+
+    <div class="col-sm-2">
+        <a href="https://www.youtube.com/channel/UCiX7Ga_ONG7fEsw4rT66_Dg"><img src="icons/1476978007_YouTube.png" class="socialticon" width="40px" height="auto"></a>
+
+
+    </div>
+
+    <div class="col-sm-2">
+        <a href="https://twitter.com/kungleonidis"><img src="icons/1476978000_Twitter.png" class="socialticon" width="40px " height="auto"></a>
+
+    </div>
+
+    <div class="col-sm-3"></div>
+  </div>
+</div>
+
+
+
+    <!-- Footer section -->
+
+        <footer>
+
+          <p>Contact information: <a href="mailto:leonardoe.lazcano@gmail.com">leonardoe.lazcano@gmail.com</a>.</p>
+
+
+
+        </footer>
+
+</body>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCvYOK-PWCtSOEJ_fQEvjVtHA9D1IPYwS0",
+    authDomain: "arttech-60c60.firebaseapp.com",
+    databaseURL: "https://arttech-60c60.firebaseio.com",
+    storageBucket: "arttech-60c60.appspot.com",
+    messagingSenderId: "59763235069"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>

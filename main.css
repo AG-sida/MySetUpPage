@@ -1,0 +1,189 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(255, 255, 251);
+}
+
+a:hover {
+    text-decoration: none;
+    color: hotpink;
+}
+
+h1 {
+    color: rgb(03, 3, 20);
+}
+
+p {
+    color: black;
+}
+
+.arttext {
+    width: inherit;
+}
+
+.navbar-header {
+    height: 15px;
+    background-color: transparent;
+}
+
+.navbar-default {
+    color: red;
+    background-color: #ccc;
+    opacity: 0.98;
+    border-color: #E75480;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #E75480;
+}
+
+button.navbar-toggle {
+
+    border: 3px solid #73AD21;
+    margin-top: 40px;
+    margin-right:60px;
+
+
+}
+
+
+/* Responsive media queries*/
+
+
+/* ----------- Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {}
+
+
+/* ----------- Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}
+
+
+/* ----------- Galaxy S3 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- Galaxy S4 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* Portrait */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+/* ----------- Galaxy S5 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* Portrait */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+/* ----------- Galaxy Tab 10.1 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media (min-device-width: 800px) and (max-device-width: 1280px) {}
+
+
+/* Portrait */
+
+@media (max-device-width: 800px) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media (max-device-width: 1280px) and (orientation: landscape) {}
+
+
+/* image slider */
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    position: inherit;
+    width: 100%;
+    max-height: 200px;
+    margin: 0px;
+    border-color: hotpink;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+}
+
+.Social {
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: inherit;
+}
+
+footer {
+    clear: both;
+    background-color: #ccc;
+    margin-top: 50px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.thumbnail:hover {
+    text-decoration: none;
+    position: relative;
+    top: -25px;
+    left: -35px;
+    width: 400px;
+    height: auto;
+    display: block;
+    z-index: 999;
+}
+
+.col-sm-2 {
+    max-height: 20px;
+}
+
+.wrap {
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    background: transparent;
+    padding-bottom: 1px;
+    box-shadow: 0px 40px 60px -20px;
+}
